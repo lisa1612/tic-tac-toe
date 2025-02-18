@@ -18,13 +18,10 @@ By using **Netlify**, we take advantage of **cloud computing services** to make 
 
 
 ### 🎮 Game Interface
-<img src="images/game-ui.png" alt="Game UI" width="400px">
-
-### ✅ Winning Condition
-<img src="images/winning-strike.png" alt="Game UI" width="400px">
+<img src="images/game-ui.png" alt="Game UI" width="400px"> <img src="images/winning-strike.png" alt="Game UI" width="400px">
 
 
-## 🏗️ Running Locally
+## Running Locally
 1. Clone this repository:
    ```sh
    git clone https://github.com/your-github-username/tic-tac-toe-netlify.git
