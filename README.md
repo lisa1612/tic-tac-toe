@@ -18,10 +18,10 @@ By using **Netlify**, we take advantage of **cloud computing services** to make 
 
 
 ### 🎮 Game Interface
-![Game UI](screenshots/game-ui.png)
+![Game UI](images/game-ui.png)
 
 ### ✅ Winning Condition
-![Winning Effect](screenshots/winning-strike.png)
+![Winning Effect](images/winning-strike.png)
 
 
 ---
