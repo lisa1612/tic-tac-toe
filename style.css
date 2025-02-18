@@ -1,5 +1,5 @@
 body {
-    font-family: "Verdana", sans-serif; /* Change the font family to Verdana */
+    font-family: "Verdana", sans-serif; 
     background-color: #170020;
     color: #ffffff;
     animation: animateBackground 10s ease infinite;
@@ -49,9 +49,9 @@ body {
 
 .game--container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Update grid-template-columns */
-    max-width: 306px; /* Change width to max-width */
-    width: 100%; /* Add this to make it responsive */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+    max-width: 306px; 
+    width: 100%; 
     margin: 10px auto;
     background-color: #426193;
     color: #fbfbfb;
@@ -72,21 +72,17 @@ body {
     color: #efeeef;
     border: none;
     cursor: pointer;
-    border-radius: 25px; /* Increase the border-radius for a rounded button */
+    border-radius: 25px; 
     margin: 20px auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, color 0.3s ease; /* Add a smooth transition effect */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .game--restart:hover {
-    color: #a740d3; /* Change the background color on hover */
-    color: #c035ca; /* Change the text color on hover */
+    color: #a740d3; 
+    color: #c035ca; 
 }
 
-/* Rest of the CSS code */
-
-
-/* Add the following CSS for animations */
 @keyframes cellAnimation {
     0% {
         transform: scale(0);
@@ -136,4 +132,103 @@ body {
     margin-top: 40px;
     font-size: 12px;
     color: #5e5e5e;
-  }
+}
+
+.win-strike {
+    text-decoration: line-through;
+    color: #ffcc00;
+    animation: strikeEffect 0.5s ease-in-out;
+}
+
+@keyframes strikeEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Winning Line Base */
+.game--container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    max-width: 306px;
+    margin: 10px auto;
+    background-color: #426193;
+    color: #fbfbfb;
+}
+
+.game--container::after {
+    content: "";
+    position: absolute;
+    background-color: #ffcc00;
+    height: 5px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Horizontal Winning Lines */
+.game--container.row-top::after {
+    transform: scaleX(1);
+    top: 16.5%;
+}
+
+.game--container.row-middle::after {
+    transform: scaleX(1);
+    top: 50%;
+}
+
+.game--container.row-bottom::after {
+    transform: scaleX(1);
+    top: 83.5%;
+}
+
+/* Vertical Winning Lines */
+.game--container::before {
+    content: "";
+    position: absolute;
+    background-color: #ffcc00;
+    width: 5px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: scaleY(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.game--container.col-left::before {
+    transform: scaleY(1);
+    left: 16.5%;
+}
+
+.game--container.col-middle::before {
+    transform: scaleY(1);
+    left: 50%;
+}
+
+.game--container.col-right::before {
+    transform: scaleY(1);
+    left: 83.5%;
+}
+
+/* Diagonal Winning Lines */
+.game--container.diag-main::after {
+    transform: scaleX(1) rotate(45deg);
+    width: 140%;
+    left: -20%;
+}
+
+.game--container.diag-anti::after {
+    transform: scaleX(1) rotate(-45deg);
+    width: 140%;
+    left: -20%;
+}
+
