@@ -19,10 +19,10 @@ By using **Netlify**, we take advantage of **cloud computing services** to make 
 
 ### 🎮 Game Interface
 ![Game UI](images/game-ui.png)
+<img src="images/game-ui.png" alt="Game UI" width="150px">
 
 ### ✅ Winning Condition
 ![Winning Effect](images/winning-strike.png)
-
 
 ---
 
@@ -41,6 +41,9 @@ By using **Netlify**, we take advantage of **cloud computing services** to make 
 3. Click on **"New site from Git"**.
 4. Select your GitHub repository and deploy.
 5. Netlify will handle the rest, making your web app live in seconds!
+
+
+
 
 
 
