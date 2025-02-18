@@ -2,12 +2,7 @@
 
 A simple **Tic-Tac-Toe** game built with **HTML, CSS, and JavaScript**, created as a project for our **Cloud Computing** class. This project demonstrates how to deploy a web application on **Netlify**, showcasing the advantages of cloud-based hosting and deployment services.
 
-🔗 [❌ | ⭕ | ❌  
-———+———+———  
-⭕ | ❌ | ⭕  
-———+———+———  
-❌ | ⭕ | ❌  
-](https://tictactoe-lisa-jeeva.netlify.app/)           
+🔗 [Play Tic-Tac-Toe ❌⭕](https://tictactoe-lisa-jeeva.netlify.app/)           
 
 
 ## ☁️ Why Netlify?
